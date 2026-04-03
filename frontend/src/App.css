@@ -1,0 +1,262 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.4rem;
+  border-bottom: 1px solid #dde3ef;
+  background: #ffffffd9;
+  backdrop-filter: blur(8px);
+}
+
+.main-header .brand a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #13326d;
+  letter-spacing: 0.02em;
+}
+
+.main-header nav {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: #22407f;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+}
+
+.main-header nav a.active {
+  background: #e8f0ff;
+}
+
+.auth-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.auth-actions a,
+.auth-actions button {
+  border: 1px solid #c8d7f2;
+  border-radius: 8px;
+  background: #fff;
+  color: #163b82;
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  font-weight: 600;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.3rem;
+}
+
+.page {
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dce5f3;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(26, 38, 77, 0.07);
+  padding: 1.2rem;
+}
+
+.hero-card {
+  background: linear-gradient(140deg, #13326d 0%, #255db8 100%);
+  border-radius: 18px;
+  color: #fff;
+  padding: 1.4rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.9rem;
+}
+
+.hero-home,
+.hero-doctor {
+  min-height: 240px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(13, 37, 88, 0.84), rgba(30, 74, 150, 0.72));
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.hero-overlay.compact {
+  max-width: 420px;
+}
+
+.hero-card h1 {
+  margin: 0.2rem 0 0.8rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  opacity: 0.85;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.card {
+  border: 1px solid #dfebff;
+  border-radius: 14px;
+  padding: 0.9rem;
+  background: #f8fbff;
+}
+
+.row {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form {
+  max-width: 420px;
+}
+
+.form label {
+  display: block;
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.62rem;
+  border-radius: 8px;
+  border: 1px solid #c8d7f2;
+  margin-top: 0.2rem;
+}
+
+.form select,
+.row select,
+.row input {
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid #c8d7f2;
+  background: #fff;
+}
+
+.btn {
+  border: 1px solid #1f4ea0;
+  border-radius: 9px;
+  background: #1f4ea0;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.55rem 0.85rem;
+  font-weight: 700;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: #1f4ea0;
+}
+
+.error {
+  color: #b42318;
+  margin-top: 0.7rem;
+}
+
+.success {
+  color: #086f3e;
+  margin-top: 0.7rem;
+}
+
+.table-wrap {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #dce5f3;
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  vertical-align: top;
+}
+
+.table th {
+  font-size: 0.85rem;
+  color: #27447e;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.dash-tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.dash-tab {
+  border: 1px solid #c8d7f2;
+  border-radius: 9px;
+  background: #fff;
+  color: #1f4ea0;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  font-weight: 700;
+}
+
+.dash-tab.active {
+  background: #1f4ea0;
+  color: #fff;
+  border-color: #1f4ea0;
+}
+
+.toast {
+  margin: 0.6rem 0 1rem;
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  font-weight: 600;
+}
+
+.toast.success {
+  background: #e9f8ef;
+  border: 1px solid #9fd7b1;
+  color: #0f5b33;
+}
+
+.toast.error {
+  background: #ffecec;
+  border: 1px solid #f0b1b1;
+  color: #9a1b1b;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,9 +5,9 @@ spring:
   application:
     name: USER-SERVICE
   datasource:
-    url: jdbc:postgresql://localhost:5433/hospital
+    url: jdbc:postgresql://localhost:5432/hospital
     username: postgres
-    password: admin
+    password: 1234
   jpa:
     hibernate:
       ddl-auto: update

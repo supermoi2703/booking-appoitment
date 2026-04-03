@@ -43,6 +43,8 @@ public class SecurityConfiguration  extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/findPersonById/**")
                 .permitAll()
+                .antMatchers("/findAllPerson", "/findAllPersonSimple", "/setAsDoctor/**", "/deleteById/**")
+                .hasAuthority("admin")
                 .anyRequest()
                 .authenticated()
                 .and()
